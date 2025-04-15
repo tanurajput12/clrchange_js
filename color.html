@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    function colorchange(){
+        document.getElementById("color").style.color = "red";
+        document.getElementById("color").style.fontSize = "50px";
+        document.getElementById("color").style.backgroundColor="black";
+        document.getElementById("color").style.textAlign="center";
+        document.getElementById("color").style.textDecoration="underline";
+        document.getElementById("color").style.fontFamily="verdana";
+        document.getElementById("color").style.fontStyle="italic";
+        dpcument.getElementById("color").style.textTransform="uppercase";
+        document.getElementById("color").style.fontWeight="bold";
+        document.getElementById("color").style.textShadow="2px 2px 5px red";
+    }
+    </script>
+</head>
+<body>
+    <h1 id="color">color change</h1>
+    <button onclick="colorchange()">click</button>
+</body>
+</html>
