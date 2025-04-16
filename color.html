@@ -5,22 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-    function colorchange(){
-        document.getElementById("color").style.color = "red";
-        document.getElementById("color").style.fontSize = "50px";
-        document.getElementById("color").style.backgroundColor="black";
-        document.getElementById("color").style.textAlign="center";
-        document.getElementById("color").style.textDecoration="underline";
-        document.getElementById("color").style.fontFamily="verdana";
-        document.getElementById("color").style.fontStyle="italic";
-        dpcument.getElementById("color").style.textTransform="uppercase";
-        document.getElementById("color").style.fontWeight="bold";
-        document.getElementById("color").style.textShadow="2px 2px 5px red";
-    }
+        function clr(){
+            document.getElementById("color").style.backgroundColor="blue";
+        }
+        function change(){
+            document.getElementById("color").style.backgroundColor="green";
+        }
+        function clrchange(){
+            document.getElementById("color").style.backgroundColor="pink";
+        }
+        function changeclr(){
+            document.getElementById("color").style.color="skyblue";
+        }
+        function textchange(){
+        
+            document.getElementById("text").innerText="this is indore";
+            document.getElementById("text").style.color="blue";
+        }
     </script>
 </head>
-<body>
+<body style="background-color: red;">
     <h1 id="color">color change</h1>
-    <button onclick="colorchange()">click</button>
+    <button onclick="clr()">click </button>
+    <button onclick="change()">change again</button>
+    <button onclick="clrchange()">change again</button>
+    <button onclick="changeclr()">change again</button>
+
+    <h1 id="text">Bhopal is the city of the lake</h1>
+    <button onclick="textchange()">change</button>
 </body>
 </html>
